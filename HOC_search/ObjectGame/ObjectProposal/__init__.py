@@ -1,0 +1,1 @@
+from .Proposal import ObjectProposal

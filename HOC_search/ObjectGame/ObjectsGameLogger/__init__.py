@@ -1,0 +1,1 @@
+from .ObjectsGameLogger import ObjectsGameLogger

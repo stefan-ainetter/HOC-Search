@@ -1,0 +1,38 @@
+cluster_tree:
+  # Paths for output data
+  # Placeholder tree related paths. %s Will be replaced with entries in object_categories
+  tree_path: "data/ShapeNetCore.v2.PC15k_tree/%s/"
+
+  nodes_per_level: [5]
+
+  # Keep these three as is for now
+  avg_nodes_per_cluster: 1
+  min_nodes_per_cluster: 1
+  min_clusters_n: 2
+
+  # Extends the tree with rotation nodes for each of the listed rotation angles. Empty list means no rotation nodes.
+  rotation_degrees: [ 0,1,2,3 ] # [0,90,180,270] degree
+
+logger:
+  export_graph_every: 100
+
+montescene:
+  mcts:
+      num_sim_iter: 1
+      exploit_coeff: 1.0
+      start_explore_coeff: 20.0
+      end_explore_coeff: 1.0
+      ucb_score_type: "MAX"
+      refinement:
+          optimize_steps: 0
+          optimizer_lr: 5e-4
+          final_optimization_steps: 0
+
+      logging:
+        log_time: False
+        log_steps: False
+        log_iters: True
+  tree:
+      sib_nodes_limit: 0
+      add_esc_nodes: False
+      vis_locked: False
