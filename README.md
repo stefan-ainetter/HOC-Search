@@ -56,7 +56,7 @@ The `gpu` argument specifies which GPU should be used for processing.
 By default, code is executed on CPU.
 
 ### Cluster Trees for Object Categories
-Download the pre-build tree structures for the individual categories [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6/download?path=%2FHOC_Search&files=ShapeNetCore.v2.PC15k_tree.zip).
+Download the pre-build tree structures for the individual categories [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6?dir=/HOC_Search/cluster_trees).
 Copy them to `./data`.
 
 After the above-mentioned steps the `./data` folder should contain the following directories:
@@ -76,7 +76,7 @@ After the above-mentioned steps the `./data` folder should contain the following
 ## Run HOC-Search for ScanNet
 
 ### Download example
-Download the ScanNet example [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6/download?path=%2FHOC_Search%2Fexamples_github&files=ScanNet.zip). Extract
+Download the ScanNet example [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6?dir=/HOC_Search/ScanNet_example). Extract
 the folders `extracted, preprocessed, scans` and copy them to `./data/ScanNet`.
 
 ### Run HOC-Search method
@@ -89,7 +89,7 @@ Model output will be stored in `./output`.
 ## Run HOC-Search for ScanNet++
 
 ### Download example
-* Download the ScanNet++ example [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6/download?path=%2FHOC_Search%2Fexamples_github&files=ScanNetpp.zip). Extract
+* Download the ScanNet++ example [here](https://cloud.tugraz.at/index.php/s/NA7icqiJ5SeNSA6?dir=/HOC_Search/ScanNetpp_example). Extract
 the folders `data, preprocessed` and copy them to `./data/ScanNetpp`.
 
 ### Run HOC-Search method
